@@ -1,0 +1,177 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html lang="en">
+<head>
+<title>Source code</title>
+<link rel="stylesheet" type="text/css" href="../../../../../../stylesheet.css" title="Style">
+</head>
+<body>
+<div class="sourceContainer">
+<pre><span class="sourceLineNo">001</span>/*<a name="line.1"></a>
+<span class="sourceLineNo">002</span> * Licensed to the Apache Software Foundation (ASF) under one or more<a name="line.2"></a>
+<span class="sourceLineNo">003</span> * contributor license agreements.  See the NOTICE file distributed with<a name="line.3"></a>
+<span class="sourceLineNo">004</span> * this work for additional information regarding copyright ownership.<a name="line.4"></a>
+<span class="sourceLineNo">005</span> * The ASF licenses this file to You under the Apache License, Version 2.0<a name="line.5"></a>
+<span class="sourceLineNo">006</span> * (the "License"); you may not use this file except in compliance with<a name="line.6"></a>
+<span class="sourceLineNo">007</span> * the License.  You may obtain a copy of the License at<a name="line.7"></a>
+<span class="sourceLineNo">008</span> *<a name="line.8"></a>
+<span class="sourceLineNo">009</span> *      http://www.apache.org/licenses/LICENSE-2.0<a name="line.9"></a>
+<span class="sourceLineNo">010</span> *<a name="line.10"></a>
+<span class="sourceLineNo">011</span> * Unless required by applicable law or agreed to in writing, software<a name="line.11"></a>
+<span class="sourceLineNo">012</span> * distributed under the License is distributed on an "AS IS" BASIS,<a name="line.12"></a>
+<span class="sourceLineNo">013</span> * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.<a name="line.13"></a>
+<span class="sourceLineNo">014</span> * See the License for the specific language governing permissions and<a name="line.14"></a>
+<span class="sourceLineNo">015</span> * limitations under the License.<a name="line.15"></a>
+<span class="sourceLineNo">016</span> */<a name="line.16"></a>
+<span class="sourceLineNo">017</span><a name="line.17"></a>
+<span class="sourceLineNo">018</span>package org.apache.commons.logging.simple;<a name="line.18"></a>
+<span class="sourceLineNo">019</span><a name="line.19"></a>
+<span class="sourceLineNo">020</span>import java.text.DateFormat;<a name="line.20"></a>
+<span class="sourceLineNo">021</span>import java.text.SimpleDateFormat;<a name="line.21"></a>
+<span class="sourceLineNo">022</span>import java.util.Date;<a name="line.22"></a>
+<span class="sourceLineNo">023</span><a name="line.23"></a>
+<span class="sourceLineNo">024</span>import junit.framework.Test;<a name="line.24"></a>
+<span class="sourceLineNo">025</span><a name="line.25"></a>
+<span class="sourceLineNo">026</span>import org.apache.commons.logging.PathableClassLoader;<a name="line.26"></a>
+<span class="sourceLineNo">027</span>import org.apache.commons.logging.PathableTestSuite;<a name="line.27"></a>
+<span class="sourceLineNo">028</span><a name="line.28"></a>
+<span class="sourceLineNo">029</span><a name="line.29"></a>
+<span class="sourceLineNo">030</span>/**<a name="line.30"></a>
+<span class="sourceLineNo">031</span> * Tests custom date time format configuration<a name="line.31"></a>
+<span class="sourceLineNo">032</span> */<a name="line.32"></a>
+<span class="sourceLineNo">033</span>public class DateTimeCustomConfigTestCase extends CustomConfigTestCase {<a name="line.33"></a>
+<span class="sourceLineNo">034</span><a name="line.34"></a>
+<span class="sourceLineNo">035</span>    // ----------------------------------------------------------- Constructors<a name="line.35"></a>
+<span class="sourceLineNo">036</span><a name="line.36"></a>
+<span class="sourceLineNo">037</span>    /**<a name="line.37"></a>
+<span class="sourceLineNo">038</span>     * Return the tests included in this test suite.<a name="line.38"></a>
+<span class="sourceLineNo">039</span>     * &lt;p&gt;<a name="line.39"></a>
+<span class="sourceLineNo">040</span>     * We need to use a PathableClassLoader here because the SimpleLog class<a name="line.40"></a>
+<span class="sourceLineNo">041</span>     * is a pile of junk and chock-full of static variables. Any other test<a name="line.41"></a>
+<span class="sourceLineNo">042</span>     * (like simple.CustomConfigTestCase) that has used the SimpleLog class<a name="line.42"></a>
+<span class="sourceLineNo">043</span>     * will already have caused it to do once-only initialisation that we<a name="line.43"></a>
+<span class="sourceLineNo">044</span>     * can't reset, even by calling LogFactory.releaseAll, because of those<a name="line.44"></a>
+<span class="sourceLineNo">045</span>     * ugly statics. The only clean solution is to load a clean copy of<a name="line.45"></a>
+<span class="sourceLineNo">046</span>     * commons-logging including SimpleLog via a nice clean classloader.<a name="line.46"></a>
+<span class="sourceLineNo">047</span>     * Or we could fix SimpleLog to be sane...<a name="line.47"></a>
+<span class="sourceLineNo">048</span>     */<a name="line.48"></a>
+<span class="sourceLineNo">049</span>    public static Test suite() throws Exception {<a name="line.49"></a>
+<span class="sourceLineNo">050</span>        Class thisClass = DateTimeCustomConfigTestCase.class;<a name="line.50"></a>
+<span class="sourceLineNo">051</span><a name="line.51"></a>
+<span class="sourceLineNo">052</span>        PathableClassLoader loader = new PathableClassLoader(null);<a name="line.52"></a>
+<span class="sourceLineNo">053</span>        loader.useExplicitLoader("junit.", Test.class.getClassLoader());<a name="line.53"></a>
+<span class="sourceLineNo">054</span>        loader.addLogicalLib("testclasses");<a name="line.54"></a>
+<span class="sourceLineNo">055</span>        loader.addLogicalLib("commons-logging");<a name="line.55"></a>
+<span class="sourceLineNo">056</span><a name="line.56"></a>
+<span class="sourceLineNo">057</span>        Class testClass = loader.loadClass(thisClass.getName());<a name="line.57"></a>
+<span class="sourceLineNo">058</span>        return new PathableTestSuite(testClass, loader);<a name="line.58"></a>
+<span class="sourceLineNo">059</span>    }<a name="line.59"></a>
+<span class="sourceLineNo">060</span><a name="line.60"></a>
+<span class="sourceLineNo">061</span><a name="line.61"></a>
+<span class="sourceLineNo">062</span>    /**<a name="line.62"></a>
+<span class="sourceLineNo">063</span>     * Set up system properties required by this unit test. Here, we<a name="line.63"></a>
+<span class="sourceLineNo">064</span>     * set up the props defined in the parent class setProperties method,<a name="line.64"></a>
+<span class="sourceLineNo">065</span>     * and add a few to configure the SimpleLog class date/time output.<a name="line.65"></a>
+<span class="sourceLineNo">066</span>     */<a name="line.66"></a>
+<span class="sourceLineNo">067</span>    public void setProperties() {<a name="line.67"></a>
+<span class="sourceLineNo">068</span>        super.setProperties();<a name="line.68"></a>
+<span class="sourceLineNo">069</span><a name="line.69"></a>
+<span class="sourceLineNo">070</span>        System.setProperty(<a name="line.70"></a>
+<span class="sourceLineNo">071</span>            "org.apache.commons.logging.simplelog.dateTimeFormat",<a name="line.71"></a>
+<span class="sourceLineNo">072</span>            "dd.mm.yyyy");<a name="line.72"></a>
+<span class="sourceLineNo">073</span>        System.setProperty(<a name="line.73"></a>
+<span class="sourceLineNo">074</span>            "org.apache.commons.logging.simplelog.showdatetime",<a name="line.74"></a>
+<span class="sourceLineNo">075</span>            "true");<a name="line.75"></a>
+<span class="sourceLineNo">076</span>    }<a name="line.76"></a>
+<span class="sourceLineNo">077</span><a name="line.77"></a>
+<span class="sourceLineNo">078</span>    /**<a name="line.78"></a>
+<span class="sourceLineNo">079</span>     * Set up instance variables required by this test case.<a name="line.79"></a>
+<span class="sourceLineNo">080</span>     */<a name="line.80"></a>
+<span class="sourceLineNo">081</span>    public void setUp() throws Exception {<a name="line.81"></a>
+<span class="sourceLineNo">082</span>        super.setUp();<a name="line.82"></a>
+<span class="sourceLineNo">083</span>    }<a name="line.83"></a>
+<span class="sourceLineNo">084</span><a name="line.84"></a>
+<span class="sourceLineNo">085</span><a name="line.85"></a>
+<span class="sourceLineNo">086</span>    // ----------------------------------------------------------- Methods<a name="line.86"></a>
+<span class="sourceLineNo">087</span><a name="line.87"></a>
+<span class="sourceLineNo">088</span>    /** Checks that the date time format has been successfully set */<a name="line.88"></a>
+<span class="sourceLineNo">089</span>    protected void checkDecoratedDateTime() {<a name="line.89"></a>
+<span class="sourceLineNo">090</span>        assertEquals("Expected date format to be set", "dd.mm.yyyy",<a name="line.90"></a>
+<span class="sourceLineNo">091</span>                     ((DecoratedSimpleLog) log).getDateTimeFormat());<a name="line.91"></a>
+<span class="sourceLineNo">092</span>        // try the formatter<a name="line.92"></a>
+<span class="sourceLineNo">093</span>        Date now = new Date();<a name="line.93"></a>
+<span class="sourceLineNo">094</span>        DateFormat formatter = ((DecoratedSimpleLog) log).getDateTimeFormatter();<a name="line.94"></a>
+<span class="sourceLineNo">095</span>        SimpleDateFormat sampleFormatter = new SimpleDateFormat("dd.mm.yyyy");<a name="line.95"></a>
+<span class="sourceLineNo">096</span>        assertEquals("Date should be formatters to pattern dd.mm.yyyy",<a name="line.96"></a>
+<span class="sourceLineNo">097</span>                     sampleFormatter.format(now), formatter.format(now));<a name="line.97"></a>
+<span class="sourceLineNo">098</span>    }<a name="line.98"></a>
+<span class="sourceLineNo">099</span><a name="line.99"></a>
+<span class="sourceLineNo">100</span>    /** Hook for subclassses */<a name="line.100"></a>
+<span class="sourceLineNo">101</span>    protected void checkShowDateTime() {<a name="line.101"></a>
+<span class="sourceLineNo">102</span>        assertTrue(((DecoratedSimpleLog) log).getShowDateTime());<a name="line.102"></a>
+<span class="sourceLineNo">103</span>    }<a name="line.103"></a>
+<span class="sourceLineNo">104</span><a name="line.104"></a>
+<span class="sourceLineNo">105</span>}<a name="line.105"></a>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</pre>
+</div>
+</body>
+</html>

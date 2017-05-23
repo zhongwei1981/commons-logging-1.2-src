@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<pmd version="5.0.2" timestamp="2017-05-23T11:12:37.266">
+<file name="F:\zhong_J2EE\commons-logging-1.2-src\src\main\java\org\apache\commons\logging\impl\LogFactoryImpl.java">
+<violation beginline="1256" endline="1256" begincolumn="52" endcolumn="62" rule="UnusedFormalParameter" ruleset="Unused Code" package="org.apache.commons.logging.impl" class="LogFactoryImpl" method="handleFlawedDiscovery" variable="classLoader" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused method parameters such as 'classLoader'.
+</violation>
+</file>
+<file name="F:\zhong_J2EE\commons-logging-1.2-src\src\main\java\org\apache\commons\logging\impl\NoOpLog.java">
+<violation beginline="37" endline="37" begincolumn="27" endcolumn="30" rule="UnusedFormalParameter" ruleset="Unused Code" package="org.apache.commons.logging.impl" class="NoOpLog" variable="name" externalInfoUrl="http://pmd.sourceforge.net/pmd-5.0.2/rules/java/unusedcode.html#UnusedFormalParameter" priority="3">
+Avoid unused constructor parameters such as 'name'.
+</violation>
+</file>
+</pmd>

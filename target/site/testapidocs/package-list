@@ -1,0 +1,17 @@
+org.apache.commons.logging
+org.apache.commons.logging.avalon
+org.apache.commons.logging.config
+org.apache.commons.logging.impl
+org.apache.commons.logging.jdk14
+org.apache.commons.logging.log4j
+org.apache.commons.logging.log4j.log4j12
+org.apache.commons.logging.logkit
+org.apache.commons.logging.noop
+org.apache.commons.logging.pathable
+org.apache.commons.logging.security
+org.apache.commons.logging.servlet
+org.apache.commons.logging.simple
+org.apache.commons.logging.tccl
+org.apache.commons.logging.tccl.custom
+org.apache.commons.logging.tccl.log
+org.apache.commons.logging.tccl.logfactory

@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<rss version="0.91">
+  <channel>
+    <title>Apache Commons Logging - Checkstyle report</title>
+    <link>http://commons.apache.org/proper/commons-logging/</link>
+    <description>Apache Commons Logging - Checkstyle report</description>
+    <language>en-us</language>
+    <copyright>&#169;2001 - 2017 The Apache Software Foundation</copyright>
+    <item>
+      <title>File: 14,
+             Errors: 0,
+             Warnings: 14,
+             Infos: 0
+      </title>
+            <link>http://commons.apache.org/proper/commons-logging//checkstyle.html</link>
+      <description>
+        <p>Click <a href="http://commons.apache.org/proper/commons-logging//checkstyle.html">here</a> for the full Checkstyle report.</p>
+
+        <table summary="Files" boder="1">
+          <thead>
+            <tr>
+              <th>Files</th>
+              <th style="width:30px;"><abbr title="Info">I</abbr></th>
+              <th style="width:30px;"><abbr title="Warning">W</abbr></th>
+              <th style="width:30px;"><abbr title="Error">E</abbr></th>
+            </tr>
+          </thead>
+          <tbody>
+                          <tr>
+                <td>
+                  <a href="http://commons.apache.org/proper/commons-logging//checkstyle.html#org.apache.commons.logging.LogSource.java">org/apache/commons/logging/LogSource.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://commons.apache.org/proper/commons-logging//checkstyle.html#org.apache.commons.logging.impl.SimpleLog.java">org/apache/commons/logging/impl/SimpleLog.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://commons.apache.org/proper/commons-logging//checkstyle.html#org.apache.commons.logging.impl.LogFactoryImpl.java">org/apache/commons/logging/impl/LogFactoryImpl.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://commons.apache.org/proper/commons-logging//checkstyle.html#org.apache.commons.logging.Log.java">org/apache/commons/logging/Log.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://commons.apache.org/proper/commons-logging//checkstyle.html#org.apache.commons.logging.impl.LogKitLogger.java">org/apache/commons/logging/impl/LogKitLogger.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://commons.apache.org/proper/commons-logging//checkstyle.html#org.apache.commons.logging.impl.WeakHashtable.java">org/apache/commons/logging/impl/WeakHashtable.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://commons.apache.org/proper/commons-logging//checkstyle.html#org.apache.commons.logging.impl.AvalonLogger.java">org/apache/commons/logging/impl/AvalonLogger.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://commons.apache.org/proper/commons-logging//checkstyle.html#org.apache.commons.logging.impl.Log4JLogger.java">org/apache/commons/logging/impl/Log4JLogger.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://commons.apache.org/proper/commons-logging//checkstyle.html#org.apache.commons.logging.impl.Jdk14Logger.java">org/apache/commons/logging/impl/Jdk14Logger.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://commons.apache.org/proper/commons-logging//checkstyle.html#org.apache.commons.logging.LogConfigurationException.java">org/apache/commons/logging/LogConfigurationException.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://commons.apache.org/proper/commons-logging//checkstyle.html#org.apache.commons.logging.impl.ServletContextCleaner.java">org/apache/commons/logging/impl/ServletContextCleaner.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://commons.apache.org/proper/commons-logging//checkstyle.html#org.apache.commons.logging.impl.Jdk13LumberjackLogger.java">org/apache/commons/logging/impl/Jdk13LumberjackLogger.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://commons.apache.org/proper/commons-logging//checkstyle.html#org.apache.commons.logging.impl.NoOpLog.java">org/apache/commons/logging/impl/NoOpLog.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                          <tr>
+                <td>
+                  <a href="http://commons.apache.org/proper/commons-logging//checkstyle.html#org.apache.commons.logging.LogFactory.java">org/apache/commons/logging/LogFactory.java</a>
+                </td>
+                <td>
+                  0
+                </td>
+                <td>
+                  1
+                </td>
+                <td>
+                  0
+                </td>
+              </tr>
+                      </tbody>
+        </table>
+        
+      </description>
+    </item>
+  </channel>
+</rss>
+

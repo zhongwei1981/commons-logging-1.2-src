@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<checkstyle version="5.4">
+<file name="F:\zhong_J2EE\commons-logging-1.2-src\src\main\java\org\apache\commons\logging\impl\AvalonLogger.java">
+<error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\zhong_J2EE\commons-logging-1.2-src\src\main\java\org\apache\commons\logging\impl\Jdk13LumberjackLogger.java">
+<error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\zhong_J2EE\commons-logging-1.2-src\src\main\java\org\apache\commons\logging\impl\Jdk14Logger.java">
+<error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\zhong_J2EE\commons-logging-1.2-src\src\main\java\org\apache\commons\logging\impl\Log4JLogger.java">
+<error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\zhong_J2EE\commons-logging-1.2-src\src\main\java\org\apache\commons\logging\impl\LogFactoryImpl.java">
+<error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\zhong_J2EE\commons-logging-1.2-src\src\main\java\org\apache\commons\logging\impl\LogKitLogger.java">
+<error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\zhong_J2EE\commons-logging-1.2-src\src\main\java\org\apache\commons\logging\impl\NoOpLog.java">
+<error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\zhong_J2EE\commons-logging-1.2-src\src\main\java\org\apache\commons\logging\impl\ServletContextCleaner.java">
+<error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\zhong_J2EE\commons-logging-1.2-src\src\main\java\org\apache\commons\logging\impl\SimpleLog.java">
+<error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\zhong_J2EE\commons-logging-1.2-src\src\main\java\org\apache\commons\logging\impl\WeakHashtable.java">
+<error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\zhong_J2EE\commons-logging-1.2-src\src\main\java\org\apache\commons\logging\Log.java">
+<error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\zhong_J2EE\commons-logging-1.2-src\src\main\java\org\apache\commons\logging\LogConfigurationException.java">
+<error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\zhong_J2EE\commons-logging-1.2-src\src\main\java\org\apache\commons\logging\LogFactory.java">
+<error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+<file name="F:\zhong_J2EE\commons-logging-1.2-src\src\main\java\org\apache\commons\logging\LogSource.java">
+<error line="0" severity="warning" message="File does not end with a newline." source="com.puppycrawl.tools.checkstyle.checks.NewlineAtEndOfFileCheck"/>
+</file>
+</checkstyle>

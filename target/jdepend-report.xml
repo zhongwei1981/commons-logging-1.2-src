@@ -1,0 +1,228 @@
+<?xml version="1.0"?>
+<JDepend>
+    <Packages>
+
+        <Package name="java.io">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang.ref">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.lang.reflect">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.net">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.security">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.text">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="java.util.logging">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="javax.servlet">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.apache.avalon.framework.logger">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.apache.commons.logging">
+            <Stats>
+                <TotalClasses>10</TotalClasses>
+                <ConcreteClasses>8</ConcreteClasses>
+                <AbstractClasses>2</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>7</Ce>
+                <A>0.2</A>
+                <I>0.88</I>
+                <D>0.08</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+                <Class sourceFile="Log.java">
+                    org.apache.commons.logging.Log
+                </Class>
+                <Class sourceFile="LogFactory.java">
+                    org.apache.commons.logging.LogFactory
+                </Class>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="LogConfigurationException.java">
+                    org.apache.commons.logging.LogConfigurationException
+                </Class>
+                <Class sourceFile="LogFactory.java">
+                    org.apache.commons.logging.LogFactory$1
+                </Class>
+                <Class sourceFile="LogFactory.java">
+                    org.apache.commons.logging.LogFactory$2
+                </Class>
+                <Class sourceFile="LogFactory.java">
+                    org.apache.commons.logging.LogFactory$3
+                </Class>
+                <Class sourceFile="LogFactory.java">
+                    org.apache.commons.logging.LogFactory$4
+                </Class>
+                <Class sourceFile="LogFactory.java">
+                    org.apache.commons.logging.LogFactory$5
+                </Class>
+                <Class sourceFile="LogFactory.java">
+                    org.apache.commons.logging.LogFactory$6
+                </Class>
+                <Class sourceFile="LogSource.java">
+                    org.apache.commons.logging.LogSource
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.net</Package>
+                <Package>java.security</Package>
+                <Package>java.util</Package>
+                <Package>org.apache.commons.logging.impl</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.apache.commons.logging.impl</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.apache.commons.logging.impl">
+            <Stats>
+                <TotalClasses>18</TotalClasses>
+                <ConcreteClasses>18</ConcreteClasses>
+                <AbstractClasses>0</AbstractClasses>
+                <Ca>1</Ca>
+                <Ce>13</Ce>
+                <A>0</A>
+                <I>0.93</I>
+                <D>0.07</D>
+                <V>1</V>
+            </Stats>
+
+            <AbstractClasses>
+            </AbstractClasses>
+
+            <ConcreteClasses>
+                <Class sourceFile="AvalonLogger.java">
+                    org.apache.commons.logging.impl.AvalonLogger
+                </Class>
+                <Class sourceFile="Jdk13LumberjackLogger.java">
+                    org.apache.commons.logging.impl.Jdk13LumberjackLogger
+                </Class>
+                <Class sourceFile="Jdk14Logger.java">
+                    org.apache.commons.logging.impl.Jdk14Logger
+                </Class>
+                <Class sourceFile="Log4JLogger.java">
+                    org.apache.commons.logging.impl.Log4JLogger
+                </Class>
+                <Class sourceFile="LogFactoryImpl.java">
+                    org.apache.commons.logging.impl.LogFactoryImpl
+                </Class>
+                <Class sourceFile="LogFactoryImpl.java">
+                    org.apache.commons.logging.impl.LogFactoryImpl$1
+                </Class>
+                <Class sourceFile="LogFactoryImpl.java">
+                    org.apache.commons.logging.impl.LogFactoryImpl$2
+                </Class>
+                <Class sourceFile="LogFactoryImpl.java">
+                    org.apache.commons.logging.impl.LogFactoryImpl$3
+                </Class>
+                <Class sourceFile="LogKitLogger.java">
+                    org.apache.commons.logging.impl.LogKitLogger
+                </Class>
+                <Class sourceFile="NoOpLog.java">
+                    org.apache.commons.logging.impl.NoOpLog
+                </Class>
+                <Class sourceFile="ServletContextCleaner.java">
+                    org.apache.commons.logging.impl.ServletContextCleaner
+                </Class>
+                <Class sourceFile="SimpleLog.java">
+                    org.apache.commons.logging.impl.SimpleLog
+                </Class>
+                <Class sourceFile="SimpleLog.java">
+                    org.apache.commons.logging.impl.SimpleLog$1
+                </Class>
+                <Class sourceFile="WeakHashtable.java">
+                    org.apache.commons.logging.impl.WeakHashtable
+                </Class>
+                <Class sourceFile="WeakHashtable.java">
+                    org.apache.commons.logging.impl.WeakHashtable$1
+                </Class>
+                <Class sourceFile="WeakHashtable.java">
+                    org.apache.commons.logging.impl.WeakHashtable$Entry
+                </Class>
+                <Class sourceFile="WeakHashtable.java">
+                    org.apache.commons.logging.impl.WeakHashtable$Referenced
+                </Class>
+                <Class sourceFile="WeakHashtable.java">
+                    org.apache.commons.logging.impl.WeakHashtable$WeakKey
+                </Class>
+            </ConcreteClasses>
+
+            <DependsUpon>
+                <Package>java.io</Package>
+                <Package>java.lang</Package>
+                <Package>java.lang.ref</Package>
+                <Package>java.lang.reflect</Package>
+                <Package>java.security</Package>
+                <Package>java.text</Package>
+                <Package>java.util</Package>
+                <Package>java.util.logging</Package>
+                <Package>javax.servlet</Package>
+                <Package>org.apache.avalon.framework.logger</Package>
+                <Package>org.apache.commons.logging</Package>
+                <Package>org.apache.log</Package>
+                <Package>org.apache.log4j</Package>
+            </DependsUpon>
+
+            <UsedBy>
+                <Package>org.apache.commons.logging</Package>
+            </UsedBy>
+        </Package>
+
+        <Package name="org.apache.log">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+
+        <Package name="org.apache.log4j">
+            <error>No stats available: package referenced, but not analyzed.</error>
+        </Package>
+    </Packages>
+
+    <Cycles>
+        <Package Name="org.apache.commons.logging">
+            <Package>org.apache.commons.logging.impl</Package>
+            <Package>org.apache.commons.logging</Package>
+        </Package>
+
+        <Package Name="org.apache.commons.logging.impl">
+            <Package>org.apache.commons.logging</Package>
+            <Package>org.apache.commons.logging.impl</Package>
+        </Package>
+
+    </Cycles>
+</JDepend>
