@@ -277,7 +277,7 @@ under the License.
               <target>
                 <copy todir="${project.reporting.outputDirectory}">
                   <fileset dir="${basedir}">
-                    <include name="RELEASE-NOTES.txt" />
+                    <include name="RELEASE-NOTES.txt"/>
                   </fileset>
                 </copy>
               </target>
@@ -458,7 +458,7 @@ under the License.
     <dependency>
       <groupId>avalon-framework</groupId>
       <artifactId>avalon-framework</artifactId>
-      <version>4.1.5</version>
+      <version>4.1.5.src</version>
       <optional>true</optional>
     </dependency>
     <dependency>
